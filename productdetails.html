@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+            <img src="assets/logo.png" style="width:300px" />
+        </a>
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="menu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-box">
+                    <input type="text"
+                        placeholder="Search Products">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="icon-box">
+                    <i onclick="location.href='wishlist.html'" class="fa-regular fa-heart"></i>
+                    <span class="tooltip-text">Wishlist</span>
+                </div>
+                <div class="icon-box">
+                    <i onclick="location.href='cart.html'" class="fa-solid fa-cart-shopping"></i>
+                    <span class="tooltip-text">Cart</span>
+                </div>
+                <div class="icon-box">
+                    <i onclick="location.href='login.html'" class="fa-regular fa-user"></i>
+                    <span class="tooltip-text">Profile</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<section class="product-details-section">
+    <div class="container">
+        <div class="row g-5">
+            <!-- LEFT SIDE -->
+            <div class="col-lg-5">
+                <div class="main-product-image">
+                    <img src="assets/iphone.jpg"
+                         alt="Product">
+                </div>
+                <div class="image-gallery">
+                    <img src="assets/iphone.jpg">
+                    <img src="assets/iphone-side.jpg">
+                    <img src="assets/iphone-back.jpg">
+                    <img src="assets/iphone-box.jpg">
+                </div>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="col-lg-7">
+                <span class="badge bg-success">
+                    Best Seller
+                </span>
+                <h1 class="product-title">
+                    Apple iPhone 16 Pro Max 256GB
+                </h1>
+                <div class="rating">
+                    ★★★★★
+                    <span>
+                        (1,245 Reviews)
+                    </span>
+                </div>
+                <div class="price-section">
+                    <h2>
+                       ₹1,29,999
+                    </h2>
+                    <h5>
+                        <del>₹1,49,999</del>
+                    </h5>
+                    <span class="discount">
+                        13% OFF
+                    </span>
+                </div>
+                <p class="stock">
+                    ✔ In Stock
+                </p>
+                <p class="description">
+                    Experience the power of the latest A19 Pro chip,
+                    stunning Super Retina XDR display,
+                    advanced camera system,
+                    and all-day battery life.
+                </p>
+                <div class="buttons">
+                    <button onclick="location.href='cart.html'" class="procart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add To Cart
+                    </button>
+                    <button onclick="location.href='checkout.html'" class="buy-btn">
+                        Buy Now
+                    </button>
+                    <button onclick="location.href='wishlist.html'" class="wishlist-btn">
+                        <i class="fa-regular fa-heart"></i>
+                        Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TABS -->
+<section class="container py-5">
+    <ul class="nav nav-tabs"
+        id="productTabs">
+        <li class="nav-item">
+            <button class="nav-link active"
+                    data-bs-toggle="tab"
+                    data-bs-target="#description">
+               Description
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link"
+                  data-bs-toggle="tab"
+                    data-bs-target="#specs">
+
+                Specifications
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#proreviews">
+                Reviews
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content p-4 bg-white shadow">
+        <!-- DESCRIPTION -->
+        <div class="tab-pane fade show active"
+             id="description">
+            <h4>Product Description</h4>
+            <p>
+                The Apple iPhone 16 Pro Max features a premium titanium design,
+                powerful A19 Pro chipset,
+                advanced AI features,
+                professional-grade cameras,
+                and exceptional battery performance.
+            </p>
+        </div>
+        <!-- SPECIFICATIONS -->
+        <div class="tab-pane fade"
+             id="specs">
+            <table class="table">
+                <tr>
+                    <th>Display</th>
+                    <td>6.9" OLED</td>
+                </tr>
+                <tr>
+                    <th>Processor</th>
+                    <td>A19 Pro Chip</td>
+                </tr>
+                <tr>
+                    <th>RAM</th>
+                    <td>12GB</td>
+                </tr>
+                <tr>
+                    <th>Storage</th>
+                    <td>256GB</td>
+                </tr>
+                <tr>
+                    <th>Battery</th>
+                    <td>5000mAh</td>
+                </tr>
+                <tr>
+                    <th>Camera</th>
+                    <td>48MP + 48MP + 12MP</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- REVIEWS -->
+        <div class="tab-pane fade"
+             id="proreviews">
+            <div class="review-box">
+                <h5>
+                    Rahul Sharma
+                </h5>
+                <p>
+                    ★★★★★
+                </p>
+                <p>
+                    Amazing performance and camera quality.
+                </p>
+            </div>
+            <hr>
+            <div class="review-box">
+                <h5>
+                    Priya Verma
+                </h5>
+                <p>
+                    ★★★★☆
+                </p>
+                <p>
+                    Battery life is excellent and display is gorgeous.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+<footer id="index_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>
+                    <img id="footerimg" src="assets/logo.png"/>
+                </h3>
+            </div>
+            <div class="col-lg-4">
+                <h4>
+                    Quick Links
+                </h4>
+                <ul>
+                    <li><a class='nav-link' href="index.html">Home </a></li>
+                    <li><a class='nav-link'  href="products.html">Products</a></li>
+                    <li><a class='nav-link'  href="about.html">About</a></li>
+                    <li><a class='nav-link'  href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h4>
+                    Contact
+                </h4>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    support@electrohub.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 9876543210
+                </p>
+                <p>
+                    <i class="fa-sharp-duotone fa-solid fa-location-dot"></i>
+                    Road No 5, Madhapur, Hyderabad, India 500001
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

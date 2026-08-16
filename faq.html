@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | ElectroHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+            <img src="assets/logo.png" style="width:300px" />
+        </a>
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="menu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-box">
+                    <input type="text"
+                        placeholder="Search Products">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="icon-box">
+                    <i onclick="location.href='wishlist.html'" class="fa-regular fa-heart"></i>
+                    <span class="tooltip-text">Wishlist</span>
+                </div>
+                <div class="icon-box">
+                    <i onclick="location.href='cart.html'" class="fa-solid fa-cart-shopping"></i>
+                    <span class="tooltip-text">Cart</span>
+                </div>
+                <div class="icon-box">
+                    <i onclick="location.href='login.html'" class="fa-regular fa-user"></i>
+                    <span class="tooltip-text">Profile</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+    <!-- HERO -->
+    <section class="faq-banner">
+        <div class="overlay">
+            <h1>Frequently Asked Questions</h1>
+            <p>
+                Find answers to common questions about orders, delivery and warranties.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="container py-5">
+        <div class="text-center mb-5">
+            <h2>Need Help?</h2>
+            <p class="text-muted">
+                Here are some of the most frequently asked questions.
+            </p>
+        </div>
+        <div class="accordion accordion-flush"
+             id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+                        How do returns work?
+                    </button>
+                </h2>
+                <div id="faq1"
+                     class="accordion-collapse collapse show"
+                     data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can return eligible products within 7 days of delivery.
+                        Refunds are processed after product inspection.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+                        How long is delivery?
+                    </button>
+                </h2>
+                <div id="faq2"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Standard delivery takes 3–7 business days.
+                        Express delivery is available in selected cities.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+                        What payment methods are accepted?
+                    </button>
+                </h2>
+                <div id="faq3"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We accept UPI, Credit Cards, Debit Cards,
+                        Net Banking, EMI options and Cash on Delivery.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq4">
+                        Do products have warranty?
+                    </button>
+                </h2>
+                <div id="faq4"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes. All products come with manufacturer warranty.
+                        Warranty periods vary by brand and product type.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq5">
+                        Can I track my order?
+                    </button>
+                </h2>
+                <div id="faq5"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes. Visit the Orders page and click
+                        "Track Order" to see real-time shipment updates.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq6">
+                        Are the products genuine?
+                    </button>
+                </h2>
+                <div id="faq6"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Absolutely. ElectroHub only sells genuine
+                        products sourced directly from authorized brands
+                        and distributors.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="faq-cta">
+        <div class="container text-center">
+            <h2>Still Have Questions?</h2>
+            <p>
+                Contact our support team and we'll help you.
+            </p>
+            <a href="contact.html"
+               class="btn btn-light btn-lg">
+                Contact Us
+            </a>
+        </div>
+    </section>
+</body>
+
+<footer id="index_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>
+                    <img id="footerimg" src="assets/logo.png"/>
+                </h3>
+            </div>
+            <div class="col-lg-4">
+                <h4>
+                    Quick Links
+                </h4>
+                <ul>
+                    <li><a class='nav-link' href="index.html">Home </a></li>
+                    <li><a class='nav-link'  href="products.html">Products</a></li>
+                    <li><a class='nav-link'  href="about.html">About</a></li>
+                    <li><a class='nav-link'  href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h4>
+                    Contact
+                </h4>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    support@electrohub.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 9876543210
+                </p>
+                <p>
+                    <i class="fa-sharp-duotone fa-solid fa-location-dot"></i>
+                    Road No 5, Madhapur, Hyderabad, India 500001
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

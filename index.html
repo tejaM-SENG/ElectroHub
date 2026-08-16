@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+            <img src="assets/logo.png" style="width:300px" />
+        </a>
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="menu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-box">
+                    <input type="text"
+                        placeholder="Search Products">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="icon-box">
+                    <i onclick="location.href='wishlist.html'" class="fa-regular fa-heart"></i>
+                    <span class="tooltip-text">Wishlist</span>
+                </div>
+                <div class="icon-box">
+                    <i onclick="location.href='cart.html'" class="fa-solid fa-cart-shopping"></i>
+                    <span class="tooltip-text">Cart</span>
+                </div>
+                <div class="icon-box">
+                    <i onclick="location.href='login.html'" class="fa-regular fa-user"></i>
+                    <span class="tooltip-text">Profile</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<section id="hero">
+    <div id="heroCarousel"
+         class="carousel slide carousel-fade mt-1"
+         data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="caption banner1">
+                    <h1>Latest Smartphones</h1>
+                    <p>Experience Innovation Like Never Before</p>
+                    <button onclick="location.href='products.html'" class="btn btn-primary">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="caption banner2">
+                    <h1>Gaming Laptops</h1>
+                    <p>Power Meets Performance</p>
+                    <button onclick="location.href='products.html'" class="btn btn-primary">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="caption banner3">
+                    <h1>Smart TVs</h1>
+                    <p>Bring Cinema Home</p>
+                    <button onclick="location.href='products.html'" class="btn btn-primary">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="caption banner4">
+                    <h1>Home Appliances</h1>
+                    <p>Make Home With Helpful Gadgets</p>
+                    <button onclick="location.href='products.html'" class="btn btn-primary">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="categories"
+         class="container-fluid py-5 m-0">
+    <h2 class="text-center mb-5">
+        Shop By Category
+    </h2>
+    <div class="row">
+        <div onclick="location.href='categories.html'" class="col-md-4 col-lg-2">
+            <div class="category-card p-0">
+                <img src="assets/mobile.png">
+                <h5>Mobiles</h5>
+            </div>
+        </div>
+        <div onclick="location.href='categories.html'" class="col-md-4 col-lg-2">
+            <div class="category-card p-0">
+                <img src="assets/laptop.png">
+                <h5>Laptops</h5>
+            </div>
+        </div>
+        <div onclick="location.href='categories.html'" class="col-md-4 col-lg-2">
+            <div class="category-card p-0">
+                <img src="assets/tablet.png">
+                <h5>Tablets</h5>
+            </div>
+        </div>
+        <div onclick="location.href='categories.html'" class="col-md-4 col-lg-2">
+            <div class="category-card p-0">
+                <img src="assets/gaming.png">
+                <h5>Gaming</h5>
+            </div>
+        </div>
+        <div onclick="location.href='categories.html'" class="col-md-4 col-lg-2">
+            <div class="category-card p-0">
+                <img src="assets/tv.png">
+                <h5>TVs</h5>
+            </div>
+        </div>
+        <div onclick="location.href='categories.html'" class="col-md-4 col-lg-2">
+            <div class="category-card p-0">
+                <img src="assets/accessories.png">
+                <h5>Accessories</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="products"
+         class="container py-5">
+    <h2 class="text-center mb-5">
+        Featured Products
+    </h2>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+                <img src="assets/iphone.jpg">
+                <h5>iPhone 16 Pro</h5>
+                <p>₹1,29,999</p>
+                <button onclick="location.href='cart.html'">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+                <img src="assets/lg.jpg">
+                <h5>LG UHD 65inch LED</h5>
+                <p>₹1,00,000</p>
+                <button onclick="location.href='cart.html'">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+                <img src="assets/samsung.jpg">
+                <h5>Samsung 85inch LED </h5>
+                <p>₹1,89,999</p>
+                <button onclick="location.href='cart.html'">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+                <img src="assets/ac.jpg">
+                <h5>Voltas AC</h5>
+                <p>₹59,999</p>
+                <button onclick="location.href='cart.html'">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+                <img src="assets/fridge.jpg">
+                <h5>LG Refrigerator</h5>
+                <p>₹89,999</p>
+                <button onclick="location.href='cart.html'">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+                <img src="assets/asus.jpg">
+                <h5>Asus Vivobook 15 Pro</h5>
+                <p>₹79,999</p>
+                <button onclick="location.href='cart.html'">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+                <img src="assets/ipad.jpg">
+                <h5>Apple 13 iPad Pro</h5>
+                <p>₹2,59,999</p>
+                <button onclick="location.href='cart.html'">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+                <img src="assets/pc.jpg">
+                <h5>CHIST Gaming PC</h5>
+                <p>₹68,250</p>
+                <button onclick="location.href='cart.html'">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="flash-sale">
+    <div class="container text-center">
+        <h2>
+            ⚡ Flash Sale
+        </h2>
+        <h3>
+            Up To 70% OFF
+        </h3>
+        <div id="timer">
+            <span>12</span> :
+            <span>15</span> :
+            <span>20</span>
+        </div>
+    </div>
+</section>
+
+<section id="why-us"
+         class="container py-5">
+    <h2 class="text-center mb-5">
+        Why Choose Us
+    </h2>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="feature-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h4>
+                    Fast Delivery
+                </h4>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="feature-card">
+                <i class="fa-solid fa-shield"></i>
+                <h4>
+                    Secure Payments
+                </h4>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="feature-card">
+                <i class="fa-solid fa-tags"></i>
+                <h4>
+                    Best Prices
+                </h4>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="feature-card">
+                <i class="fa-solid fa-headset"></i>
+                <h4>
+                    24/7 Support
+                </h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="reviews"
+         class="container py-5">
+    <h2 class="text-center mb-5">
+        Customer Reviews
+    </h2>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="review-card">
+                <h3>4.9 ★★★★★</h3>
+                <p>
+                    Excellent service and genuine products.
+                </p>
+                <h5>
+                    Rahul Sharma
+                </h5>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="review-card">
+                <h3>4.7 ★★★★★</h3>
+                <p>
+                    Excellent service and genuine products.
+                </p>
+                <h5>
+                    Mahesh Verma
+                </h5>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="review-card">
+                <h3>5.0 ★★★★★</h3>
+                <p>
+                    Excellent service and genuine products.
+                </p>
+                <h5>
+                    Manu Kumar
+                </h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="brand"
+         class="container py-5">
+    <h2 class="text-center mb-5">
+        Top Brands
+    </h2>
+    <div class="row m-0 p-0" id="brands">
+        <img id="brandlogo" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" />
+        <img id="brandlogo" src="https://upload.wikimedia.org/wikipedia/commons/6/61/Samsung_old_logo_before_year_2015.svg" />
+        <img id="brandlogo" src="assets/sonylogo.png" />
+        <img id="brandlogo" src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" />
+        <img id="brandlogo" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" />
+        <img id="brandlogo" src="https://upload.wikimedia.org/wikipedia/commons/8/8d/LG_logo_%282014%29.svg" />
+        <img id="brandlogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Lenovo_Global_Corporate_Logo.png/3840px-Lenovo_Global_Corporate_Logo.png" />
+        <img id="brandlogo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/ASUS_Corporate_Logo.svg" />
+    </div>
+</section>
+
+<section id="newsletter">
+    <div class="container text-center">
+        <h2>
+            Stay Updated
+        </h2>
+        <p class="mb-5">Get exclusive deals and offers directly to your inbox.</p>
+        <input type="email"
+               placeholder="Enter Email">
+        <button>
+            Subscribe
+        </button>
+    </div>
+</section>
+
+<section id="download">
+    <div class="container mt-5 text-center">
+        <h2 class="m-0 p-0">
+            Download ElectroHub App
+        </h2>
+        <div>
+            <img id="downloadlogo" src="https://www.svgrepo.com/show/303139/google-play-badge-logo.svg" />
+            <img id="downloadlogo" src="https://www.svgrepo.com/show/303128/download-on-the-app-store-apple-logo.svg" />
+        </div>
+    </div>
+</section>
+
+<footer id="index_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>
+                    <img id="footerimg" src="assets/logo.png"/>
+                </h3>
+            </div>
+            <div class="col-lg-4">
+                <h4>
+                    Quick Links
+                </h4>
+                <ul>
+                    <li><a class='nav-link' href="index.html">Home </a></li>
+                    <li><a class='nav-link'  href="products.html">Products</a></li>
+                    <li><a class='nav-link'  href="about.html">About</a></li>
+                    <li><a class='nav-link'  href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h4>
+                    Contact
+                </h4>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    support@electrohub.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 9876543210
+                </p>
+                <p>
+                    <i class="fa-sharp-duotone fa-solid fa-location-dot"></i>
+                    Road No 5, Madhapur, Hyderabad, India 500001
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
